@@ -1,0 +1,12 @@
+[ ERROR ] Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.
+[ ERROR ] Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:49:52.360781" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="Login" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Login.robot">
+<kw name="Open Browser To Login Page" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:55.353631" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:55.352626" elapsed="6.752455"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.105533" elapsed="0.066912"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.172812" elapsed="0.534860"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:55.350592" elapsed="7.357322"/>
+</kw>
+<test id="s1-s1-t1" name="Login Test With Excel Data" line="13">
+<kw name="LoginTest">
+<msg time="2025-12-23T12:50:02.710714" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2025-12-23T12:50:02.709809" elapsed="0.000990">Variable '${username}' not found.</status>
+</kw>
+<status status="FAIL" start="2025-12-23T12:50:02.708101" elapsed="0.002956">Variable '${username}' not found.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.711962" elapsed="2.369671"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.493336" elapsed="12.588535"/>
+</suite>
+<status status="FAIL" start="2025-12-23T12:49:52.395051" elapsed="12.690552"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="0" fail="1" skip="0">Testcases</stat>
+<stat name="Login" id="s1-s1" pass="0" fail="1" skip="0">Testcases.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:52.330769" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.386390" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:55.307227" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Login.robot", line 0</msg>
+<msg time="2025-12-23T12:49:55.307481" level="ERROR">In source file:
+  File "C:/Users/AIFA USER 77/PycharmProjects/DDTTESTING/TestData/Lo.xlsx", line 0</msg>
+<msg time="2025-12-23T12:49:55.344562" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: AttributeError: partially initialized module 'pandas' from 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\__init__.py' has no attribute '_pandas_datetime_CAPI' (most likely due to a circular import)</msg>
+</errors>
+</robot>

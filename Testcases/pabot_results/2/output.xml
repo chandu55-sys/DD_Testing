@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:49:52.231397" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="Linkdin" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Linkdin.robot">
+<kw name="Open Browser And Login" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:53.365298" level="INFO">Opening browser 'Chrome' to base url 'https://www.linkedin.com/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.364530" elapsed="4.852058"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.217135" elapsed="3.696977"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:01.915175" elapsed="0.965570"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:02.881980" level="INFO">Typing text 'chanduyandra1430@gmail.com' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.881329" elapsed="0.327967"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:03.210253" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-12-23T12:50:03.253214" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.209674" elapsed="0.116330"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:03.326677" level="INFO">Clicking button 'xpath=//button[normalize-space()='Sign in']'.</msg>
+<arg>xpath=//button[normalize-space()='Sign in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.326361" elapsed="0.137075"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-23T12:50:09.469416" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.463794" elapsed="6.007668"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:09.473145" level="INFO">Opening url 'https://shorturl.at/6SZ46'</msg>
+<arg>${POST_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:50:09.472104" elapsed="14.721128"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-23T12:50:30.194557" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-23T12:50:24.193645" elapsed="6.001065"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:53.361970" elapsed="36.832969"/>
+</kw>
+<test id="s1-s1-t1" name="End To End Like Comment Validation" line="22">
+<kw name="Read Names">
+<msg time="2025-12-23T12:50:30.197879" level="FAIL">No keyword with name 'Read Names' found.</msg>
+<var>${input_names}</var>
+<arg>${CSV_INPUT}</arg>
+<status status="FAIL" start="2025-12-23T12:50:30.197827" elapsed="0.000103">No keyword with name 'Read Names' found.</status>
+</kw>
+<kw name="Get Like Names">
+<var>${likes}</var>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198268" elapsed="0.000038"/>
+</kw>
+<kw name="Get Comment Names">
+<var>${comments}</var>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198515" elapsed="0.000030"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<var>${results}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198641" elapsed="0.000027"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${liked}</var>
+<arg>List Should Contain Value</arg>
+<arg>${likes}</arg>
+<arg>${name}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198934" elapsed="0.000029"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${commented}</var>
+<arg>List Should Contain Value</arg>
+<arg>${comments}</arg>
+<arg>${name}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199079" elapsed="0.000027"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<var>${row}</var>
+<arg>Name=${name}</arg>
+<arg>Liked=${'YES' if ${liked} else 'NO'}</arg>
+<arg>Commented=${'YES' if ${commented} else 'NO'}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199203" elapsed="0.000026"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>${row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199318" elapsed="0.000025"/>
+</kw>
+<var name="${name}"/>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198831" elapsed="0.000550"/>
+</iter>
+<var>${name}</var>
+<value>@{input_names}</value>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198731" elapsed="0.000697"/>
+</for>
+<kw name="Save Results">
+<arg>${results}</arg>
+<arg>${CSV_OUTPUT}</arg>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199549" elapsed="0.000026"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>✅ Output CSV generated successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199663" elapsed="0.000025"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:50:30.195147" elapsed="0.004686">No keyword with name 'Read Names' found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:50:30.200232" elapsed="2.335065"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.324707" elapsed="40.210762"/>
+</suite>
+<status status="FAIL" start="2025-12-23T12:49:52.254701" elapsed="40.282105"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="0" fail="1" skip="0">Testcases</stat>
+<stat name="Linkdin" id="s1-s1" pass="0" fail="1" skip="0">Testcases.Linkdin</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:52.184202" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.251222" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:53.358459" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Linkdin.robot' on line 5: Importing library 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries\csv_utilities.py' failed: ModuleNotFoundError: No module named 'six.moves'
+Traceback (most recent call last):
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries\csv_utilities.py", line 1, in &lt;module&gt;
+    import pandas as pd
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\__init__.py", line 61, in &lt;module&gt;
+    from pandas.core.api import (
+    ...&lt;62 lines&gt;...
+    )
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\core\api.py", line 1, in &lt;module&gt;
+    from pandas._libs import (
+    ...&lt;4 lines&gt;...
+    )
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\_libs\__init__.py", line 18, in &lt;module&gt;
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+  File "pandas/_libs/hashtable.pyx", line 1, in init pandas._libs.hashtable
+  File "pandas/_libs/missing.pyx", line 1, in init pandas._libs.missing
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\_libs\tslibs\__init__.py", line 40, in &lt;module&gt;
+    from pandas._libs.tslibs.conversion import localize_pydatetime
+  File "pandas/_libs/tslibs/conversion.pyx", line 1, in init pandas._libs.tslibs.conversion
+  File "pandas/_libs/tslibs/offsets.pyx", line 1, in init pandas._libs.tslibs.offsets
+  File "pandas/_libs/tslibs/timestamps.pyx", line 1, in init pandas._libs.tslibs.timestamps
+  File "pandas/_libs/tslibs/timedeltas.pyx", line 1, in init pandas._libs.tslibs.timedeltas
+  File "pandas/_libs/tslibs/timezones.pyx", line 24, in init pandas._libs.tslibs.timezones
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\dateutil\tz\__init__.py", line 2, in &lt;module&gt;
+    from .tz import *
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\dateutil\tz\tz.py", line 21, in &lt;module&gt;
+    from six.moves import _thread
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+</errors>
+</robot>

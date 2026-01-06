@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:52:19.646158" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="Forloop" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Forloop.robot">
+<test id="s1-s1-t1" name="Loop Through List" line="8">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.033801" elapsed="0.000517"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.034655" elapsed="0.000568"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-12-23T12:49:53.032314" elapsed="0.003041"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.035806" elapsed="0.000357"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.036376" elapsed="0.000427"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-12-23T12:49:53.035619" elapsed="0.001291"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.037328" elapsed="0.000322"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.037859" elapsed="0.000426"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-12-23T12:49:53.037155" elapsed="0.001227"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.038749" elapsed="0.000328"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-12-23T12:49:53.039682" level="INFO">Exiting for loop altogether.</msg>
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.039275" elapsed="0.000563"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-12-23T12:49:53.038589" elapsed="0.001362"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>2</value>
+<value>3</value>
+<value>4</value>
+<value>5</value>
+<value>6</value>
+<value>8</value>
+<status status="PASS" start="2025-12-23T12:49:53.031481" elapsed="0.008593"/>
+</for>
+<status status="PASS" start="2025-12-23T12:49:53.030851" elapsed="0.009549"/>
+</test>
+<test id="s1-s1-t2" name="Loop Through Fruits Variable" line="15">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.042410" elapsed="0.000519"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.043227" elapsed="0.000473"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-12-23T12:49:53.042194" elapsed="0.001620"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.044282" elapsed="0.000401"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.044932" elapsed="0.000488"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-12-23T12:49:53.044050" elapsed="0.001485"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.045969" elapsed="0.000385"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.046601" elapsed="0.000468"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-12-23T12:49:53.045774" elapsed="0.001422"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.047625" elapsed="0.000396"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-12-23T12:49:53.048694" level="INFO">Exiting for loop altogether.</msg>
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.048259" elapsed="0.000593"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-12-23T12:49:53.047419" elapsed="0.001555"/>
+</iter>
+<var>${i}</var>
+<value>@{FRUITS}</value>
+<status status="PASS" start="2025-12-23T12:49:53.041770" elapsed="0.007325"/>
+</for>
+<status status="PASS" start="2025-12-23T12:49:53.040893" elapsed="0.008504"/>
+</test>
+<status status="PASS" start="2025-12-23T12:49:52.339000" elapsed="0.018000"/>
+</suite>
+<suite id="s1-s2" name="HRM" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\HRM.robot">
+<test id="s1-s2-t1" name="Valid Login Test" line="14">
+<kw name="Open Browser To Login Page" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.889338" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.888802" elapsed="5.114855"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.004338" elapsed="2.171245"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.175979" elapsed="1.195177"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.887203" elapsed="8.484187"/>
+</kw>
+<kw name="Input Username" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:01.375342" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:01.372529" elapsed="0.372391"/>
+</kw>
+<arg>${VALID_USER}</arg>
+<status status="PASS" start="2025-12-23T12:50:01.371801" elapsed="0.373397"/>
+</kw>
+<kw name="Input Password" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:01.751262" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:01.749845" elapsed="0.519786"/>
+</kw>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2025-12-23T12:50:01.745709" elapsed="0.524168"/>
+</kw>
+<kw name="Click Login Button" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:02.271213" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.270804" elapsed="0.275062"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:02.270254" elapsed="0.275860"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h6[text()='Dashboard']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.546544" elapsed="1.964170"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:04.523603" level="INFO">Current page contains element 'xpath=//h6[text()='Dashboard']'.</msg>
+<arg>xpath=//h6[text()='Dashboard']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-23T12:50:04.511067" elapsed="0.012666"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:50:04.524170" elapsed="2.521824"/>
+</kw>
+<doc>Verify login with correct username and password.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.885585" elapsed="14.160661"/>
+</test>
+<test id="s1-s2-t2" name="Invalid Login Test" line="22">
+<kw name="Open Browser To Login Page" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:07.049565" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:50:07.049267" elapsed="3.875235"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:50:10.925358" elapsed="1.638653"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:12.564338" elapsed="0.624990"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:07.048715" elapsed="6.140891"/>
+</kw>
+<kw name="Input Username" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:13.191367" level="INFO">Typing text 'WrongUser' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:13.190823" elapsed="0.223650"/>
+</kw>
+<arg>${INVALID_USER}</arg>
+<status status="PASS" start="2025-12-23T12:50:13.190039" elapsed="0.224682"/>
+</kw>
+<kw name="Input Password" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:13.416390" level="INFO">Typing text 'wrongpass' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:13.415900" elapsed="0.240375"/>
+</kw>
+<arg>${INVALID_PASSWORD}</arg>
+<status status="PASS" start="2025-12-23T12:50:13.415116" elapsed="0.241487"/>
+</kw>
+<kw name="Click Login Button" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:13.658489" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:13.657913" elapsed="0.193069"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:13.657100" elapsed="0.194427"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(@class,'oxd-alert-content-text')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:13.852164" elapsed="1.440206"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:15.325014" level="INFO">Element 'xpath=//p[contains(@class,'oxd-alert-content-text')]' contains text 'Invalid credentials'.</msg>
+<arg>xpath=//p[contains(@class,'oxd-alert-content-text')]</arg>
+<arg>Invalid credentials</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-12-23T12:50:15.292721" elapsed="0.032482"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:50:15.325669" elapsed="2.210174"/>
+</kw>
+<doc>Verify login fails with wrong credentials.</doc>
+<status status="PASS" start="2025-12-23T12:50:07.047122" elapsed="10.488847"/>
+</test>
+<status status="PASS" start="2025-12-23T12:49:52.294764" elapsed="25.241755"/>
+</suite>
+<suite id="s1-s3" name="Linkdin" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Linkdin.robot">
+<kw name="Open Browser And Login" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:53.365298" level="INFO">Opening browser 'Chrome' to base url 'https://www.linkedin.com/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.364530" elapsed="4.852058"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.217135" elapsed="3.696977"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:01.915175" elapsed="0.965570"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:02.881980" level="INFO">Typing text 'chanduyandra1430@gmail.com' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.881329" elapsed="0.327967"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:03.210253" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-12-23T12:50:03.253214" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.209674" elapsed="0.116330"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:03.326677" level="INFO">Clicking button 'xpath=//button[normalize-space()='Sign in']'.</msg>
+<arg>xpath=//button[normalize-space()='Sign in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.326361" elapsed="0.137075"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-23T12:50:09.469416" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.463794" elapsed="6.007668"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:09.473145" level="INFO">Opening url 'https://shorturl.at/6SZ46'</msg>
+<arg>${POST_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:50:09.472104" elapsed="14.721128"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-23T12:50:30.194557" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-23T12:50:24.193645" elapsed="6.001065"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:53.361970" elapsed="36.832969"/>
+</kw>
+<test id="s1-s3-t1" name="End To End Like Comment Validation" line="22">
+<kw name="Read Names">
+<msg time="2025-12-23T12:50:30.197879" level="FAIL">No keyword with name 'Read Names' found.</msg>
+<var>${input_names}</var>
+<arg>${CSV_INPUT}</arg>
+<status status="FAIL" start="2025-12-23T12:50:30.197827" elapsed="0.000103">No keyword with name 'Read Names' found.</status>
+</kw>
+<kw name="Get Like Names">
+<var>${likes}</var>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198268" elapsed="0.000038"/>
+</kw>
+<kw name="Get Comment Names">
+<var>${comments}</var>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198515" elapsed="0.000030"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<var>${results}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198641" elapsed="0.000027"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${liked}</var>
+<arg>List Should Contain Value</arg>
+<arg>${likes}</arg>
+<arg>${name}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198934" elapsed="0.000029"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${commented}</var>
+<arg>List Should Contain Value</arg>
+<arg>${comments}</arg>
+<arg>${name}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199079" elapsed="0.000027"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<var>${row}</var>
+<arg>Name=${name}</arg>
+<arg>Liked=${'YES' if ${liked} else 'NO'}</arg>
+<arg>Commented=${'YES' if ${commented} else 'NO'}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199203" elapsed="0.000026"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>${row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199318" elapsed="0.000025"/>
+</kw>
+<var name="${name}"/>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198831" elapsed="0.000550"/>
+</iter>
+<var>${name}</var>
+<value>@{input_names}</value>
+<status status="NOT RUN" start="2025-12-23T12:50:30.198731" elapsed="0.000697"/>
+</for>
+<kw name="Save Results">
+<arg>${results}</arg>
+<arg>${CSV_OUTPUT}</arg>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199549" elapsed="0.000026"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>✅ Output CSV generated successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-12-23T12:50:30.199663" elapsed="0.000025"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:50:30.195147" elapsed="0.004686">No keyword with name 'Read Names' found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:50:30.200232" elapsed="2.335065"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.324707" elapsed="40.210762"/>
+</suite>
+<suite id="s1-s4" name="Login" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Login.robot">
+<kw name="Open Browser To Login Page" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:55.353631" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:55.352626" elapsed="6.752455"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.105533" elapsed="0.066912"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.172812" elapsed="0.534860"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:55.350592" elapsed="7.357322"/>
+</kw>
+<test id="s1-s4-t1" name="Login Test With Excel Data" line="13">
+<kw name="LoginTest">
+<msg time="2025-12-23T12:50:02.710714" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2025-12-23T12:50:02.709809" elapsed="0.000990">Variable '${username}' not found.</status>
+</kw>
+<status status="FAIL" start="2025-12-23T12:50:02.708101" elapsed="0.002956">Variable '${username}' not found.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.711962" elapsed="2.369671"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.493336" elapsed="12.588535"/>
+</suite>
+<suite id="s1-s5" name="Test6" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Test6.robot">
+<test id="s1-s5-t1" name="Validate UnSuccesful Login" line="23">
+<kw name="open the browser with the url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.926743" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-12-23T12:49:52.926883" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-12-23T12:49:52.927113" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</msg>
+<arg>${browser_name}</arg>
+<arg>executable_path=resources/${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.926054" elapsed="0.004273">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:49:52.930735" elapsed="0.000075"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.924048" elapsed="0.007038">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Close Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.932372" elapsed="0.000264"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.931631" elapsed="0.001174"/>
+</kw>
+<tag>REGRESSION</tag>
+<tag>SMOKE</tag>
+<status status="FAIL" start="2025-12-23T12:49:52.921874" elapsed="0.011055">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</test>
+<test id="s1-s5-t2" name="End to end ecommerce Product validation" line="31">
+<kw name="open the browser with the url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.935315" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-12-23T12:49:52.935433" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-12-23T12:49:52.935603" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</msg>
+<arg>${browser_name}</arg>
+<arg>executable_path=resources/${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.934859" elapsed="0.001901">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:49:52.937076" elapsed="0.000068"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.934376" elapsed="0.002981">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Close Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.938365" elapsed="0.000227"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.937824" elapsed="0.000916"/>
+</kw>
+<tag>REGRESSION</tag>
+<status status="FAIL" start="2025-12-23T12:49:52.933583" elapsed="0.005275">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</test>
+<test id="s1-s5-t3" name="Select the Form and navigate to Child window" line="43">
+<kw name="open the browser with the url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.941977" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-12-23T12:49:52.942072" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-12-23T12:49:52.942228" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</msg>
+<arg>${browser_name}</arg>
+<arg>executable_path=resources/${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.941565" elapsed="0.001949">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:49:52.943846" elapsed="0.000072"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.941009" elapsed="0.003129">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Close Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.946128" elapsed="0.000263"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.944592" elapsed="0.001948"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.939446" elapsed="0.007200">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.339401" elapsed="0.608025"/>
+</suite>
+<suite id="s1-s6" name="TestDemo1" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo1.robot">
+<test id="s1-s6-t1" name="Verify the incorrect logins" line="13">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.896964" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.896375" elapsed="5.026119"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:49:57.922887" elapsed="2.412823"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.336103" elapsed="1.087314"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.893292" elapsed="8.530371"/>
+</kw>
+<kw name="Login Details">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:01.425030" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:01.424642" elapsed="0.331001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:01.756535" level="INFO">Typing text 'admin1231' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>admin1231</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:01.756001" elapsed="0.561744"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:02.318812" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.318358" elapsed="1.541700"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:01.424057" elapsed="2.436252"/>
+</kw>
+<kw name="Wait Until Error Message Is Visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${eror_Message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.861148" elapsed="0.505899"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:03.860616" elapsed="0.506659"/>
+</kw>
+<kw name="Verify The Error Message">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:04.408570" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${eror_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:04.368179" elapsed="0.040493"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:50:04.408989" elapsed="0.000473"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:04.648691" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251223_124950-5-selenium-screenshot-1.png"&gt;&lt;img src="20251223_124950-5-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-23T12:50:04.649005" level="FAIL">Element with locator 'Invalid credentials' not found.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-12-23T12:50:04.409824" elapsed="0.372802">Element with locator 'Invalid credentials' not found.</status>
+</kw>
+<status status="FAIL" start="2025-12-23T12:50:04.367615" elapsed="0.415417">Element with locator 'Invalid credentials' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:50:04.783676" elapsed="2.348653"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.891695" elapsed="14.240837">Element with locator 'Invalid credentials' not found.</status>
+</test>
+<doc>verify error message</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.319389" elapsed="14.813882"/>
+</suite>
+<suite id="s1-s7" name="TestDemo4" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo4.robot">
+<test id="s1-s7-t1" name="invalid username" line="15">
+<kw name="Verify the incorrect logins">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.973240" elapsed="0.000637"/>
+</kw>
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.975993" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.975420" elapsed="7.180305"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.156135" elapsed="2.465710"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.622175" elapsed="4.072601"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.974298" elapsed="13.720758"/>
+</kw>
+<kw name="Login Details">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:06.696488" level="INFO">Typing text 'Admin1' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:06.696106" elapsed="6.267324"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:12.964411" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:12.963857" elapsed="6.152526"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:19.116826" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:19.116594" elapsed="10.110302"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-23T12:50:06.695430" elapsed="22.531919"/>
+</kw>
+<kw name="Wait Until Error Message Is Visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${eror_Message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:29.228997" elapsed="4.045669"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:29.227969" elapsed="4.046878"/>
+</kw>
+<kw name="Verify The Error Message">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:37.297920" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${eror_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:33.275256" elapsed="4.022721"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:50:37.298146" elapsed="0.000278"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:33.275016" elapsed="4.023502"/>
+</kw>
+<arg>Admin1</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2025-12-23T12:49:52.966561" elapsed="44.332018"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:50:37.298779" elapsed="4.110147"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.964802" elapsed="48.444315"/>
+</test>
+<test id="s1-s7-t2" name="Invalid passowrd" line="16">
+<kw name="Verify the incorrect logins">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-23T12:50:41.410869" elapsed="0.000338"/>
+</kw>
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:41.412279" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:50:41.411890" elapsed="8.446581"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:50:49.858850" elapsed="2.062258"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:51.921392" elapsed="4.039553"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:41.411459" elapsed="14.549635"/>
+</kw>
+<kw name="Login Details">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:55.961943" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:55.961691" elapsed="6.123568"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:02.085976" level="INFO">Typing text 'admin12' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:02.085551" elapsed="6.138675"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:08.225094" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:08.224695" elapsed="10.127044"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-23T12:50:55.961303" elapsed="22.390597"/>
+</kw>
+<kw name="Wait Until Error Message Is Visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${eror_Message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:51:18.352461" elapsed="4.025174"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:51:18.352116" elapsed="4.025768"/>
+</kw>
+<kw name="Verify The Error Message">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:26.404078" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${eror_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:22.378431" elapsed="4.025697"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:51:26.404283" elapsed="0.000239"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:51:22.378113" elapsed="4.026510"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin12</arg>
+<status status="PASS" start="2025-12-23T12:50:41.410393" elapsed="44.994291"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:51:26.405007" elapsed="4.070153"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:41.409712" elapsed="49.065620"/>
+</test>
+<test id="s1-s7-t3" name="Special characters" line="17">
+<kw name="Verify the incorrect logins">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-23T12:51:30.477318" elapsed="0.000401"/>
+</kw>
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:30.478972" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:51:30.478597" elapsed="8.196984"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:51:38.675794" elapsed="2.037708"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:51:40.713688" elapsed="4.030325"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:51:30.478063" elapsed="14.266142"/>
+</kw>
+<kw name="Login Details">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:44.745297" level="INFO">Typing text '@33' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:44.744982" elapsed="6.132955"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:50.878369" level="INFO">Typing text 'leaning' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:50.878126" elapsed="6.108308"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:56.986945" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:56.986682" elapsed="10.102339"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-23T12:51:44.744467" elapsed="22.344687"/>
+</kw>
+<kw name="Wait Until Error Message Is Visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${eror_Message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:52:07.089606" elapsed="4.038598"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:52:07.089338" elapsed="4.039007"/>
+</kw>
+<kw name="Verify The Error Message">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:52:15.172947" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${eror_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:52:11.129333" elapsed="4.043702"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:52:15.173304" elapsed="0.000378"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:52:11.128532" elapsed="4.045300"/>
+</kw>
+<arg>@33</arg>
+<arg>leaning</arg>
+<status status="PASS" start="2025-12-23T12:51:30.476746" elapsed="44.697190"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:52:15.174243" elapsed="4.095556"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:51:30.475936" elapsed="48.794019"/>
+</test>
+<doc>verify error message</doc>
+<status status="PASS" start="2025-12-23T12:49:52.416758" elapsed="146.853806"/>
+</suite>
+<suite id="s1-s8" name="TestDemo5excel" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot">
+<test id="s1-s8-t1" name="Login Test" line="12">
+<status status="FAIL" start="2025-12-23T12:49:52.952212" elapsed="0.000700">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2025-12-23T12:49:52.285806" elapsed="0.667862"/>
+</suite>
+<suite id="s1-s9" name="Testdemo7" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\testdemo7.robot">
+<test id="s1-s9-t1" name="Post Test case" line="11">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-23T12:49:57.999033" level="INFO">${headers} = {'accept': 'text/plain', 'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=text/plain</arg>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-23T12:49:57.997564" elapsed="0.001578"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-12-23T12:49:58.001192" level="INFO">Creating Session using : alias=mysession, url=https://webservice.toscacloud.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${baseurl}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-12-23T12:49:57.999617" elapsed="0.002335"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.005728" level="INFO">${req} = {'description': 'viajy like coffe', 'id': '1', 'name': 'cappuccino'}</msg>
+<var>${req}</var>
+<arg>description=viajy like coffe</arg>
+<arg>id=1</arg>
+<arg>name=cappuccino</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.002836" elapsed="0.003016"/>
+</kw>
+<kw name="Post Request" owner="RequestsLibrary">
+<msg time="2025-12-23T12:49:58.006870" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg time="2025-12-23T12:49:58.867452" level="INFO">POST Request : url=https://webservice.toscacloud.com/api/v1/Coffees 
+ path_url=/api/v1/Coffees 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'accept': 'text/plain', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '68'} 
+ body=b'{"description": "viajy like coffe", "id": "1", "name": "cappuccino"}' 
+ </msg>
+<msg time="2025-12-23T12:49:58.867595" level="INFO">POST Response : url=https://webservice.toscacloud.com/api/v1/Coffees 
+ status=200, reason=OK 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 23 Dec 2025 07:19:57 GMT', 'Server': 'Microsoft-IIS/10.0', 'Content-Encoding': 'gzip', 'Set-Cookie': 'ARRAffinity=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;Secure;Domain=webservice.toscacloud.com, ARRAffinitySameSite=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;SameSite=None;Secure;Domain=webservice.toscacloud.com', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'Strict-Transport-Security': 'max-age=31536000', 'api-supported-versions': '1.0', 'Content-Security-Policy': "default-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'", 'X-Frame-Options': 'DENY', 'X-Content-Type-Options': 'nosniff'} 
+ body={"description":"viajy like coffe","id":65,"name":"cappuccino"} 
+ </msg>
+<msg time="2025-12-23T12:49:58.867676" level="INFO">C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'webservice.toscacloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-12-23T12:49:58.867857" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/api/v1/Coffees</arg>
+<arg>json=${req}</arg>
+<arg>headers=${headers}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.006652" elapsed="0.861263"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.868624" level="INFO">200</msg>
+<arg>${response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.868107" elapsed="0.000578"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.869287" level="INFO">{"description":"viajy like coffe","id":65,"name":"cappuccino"}</msg>
+<arg>${response.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.868816" elapsed="0.000536"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.869939" level="INFO">{'description': 'viajy like coffe', 'id': 65, 'name': 'cappuccino'}</msg>
+<arg>${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.869475" elapsed="0.000539"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.870137" elapsed="0.000526"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-12-23T12:49:58.871315" level="INFO">${id} = 65</msg>
+<var>${id}</var>
+<arg>${response.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.870800" elapsed="0.000554"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.871689" level="INFO">${id} = 65</msg>
+<arg>${id}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.871496" elapsed="0.000245"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>viajy like coffe</arg>
+<arg>${response.json()}[description]</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.871859" elapsed="0.000543"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.872561" elapsed="0.000249"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:57.992754" elapsed="0.880203"/>
+</test>
+<test id="s1-s9-t2" name="Get Test Case" line="25">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.874042" level="INFO">${headers} = {'accept': 'text/plain', 'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=text/plain</arg>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.873737" elapsed="0.000345"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-12-23T12:50:00.387702" level="INFO">GET Request : url=https://webservice.toscacloud.com/api/v1/Coffees?id=65 
+ path_url=/api/v1/Coffees?id=65 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'accept': 'text/plain', 'Connection': 'keep-alive', 'Content-Type': 'application/json'} 
+ body=None 
+ </msg>
+<msg time="2025-12-23T12:50:00.387908" level="INFO">GET Response : url=https://webservice.toscacloud.com/api/v1/Coffees?id=65 
+ status=200, reason=OK 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 23 Dec 2025 07:19:59 GMT', 'Server': 'Microsoft-IIS/10.0', 'Content-Encoding': 'gzip', 'Set-Cookie': 'ARRAffinity=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;Secure;Domain=webservice.toscacloud.com, ARRAffinitySameSite=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;SameSite=None;Secure;Domain=webservice.toscacloud.com', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'Strict-Transport-Security': 'max-age=31536000', 'api-supported-versions': '1.0', 'Content-Security-Policy': "default-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'", 'X-Frame-Options': 'DENY', 'X-Content-Type-Options': 'nosniff'} 
+ body=[{"description":"An Americano is an espresso-based drink designed to resemble coffee brewed in a drip filter, considered popular in the United States of America. This drink consists of a single or double-shot of espresso combined with up to four or five ounces of hot water in a two-demitasse cup. It is important to note, that an Americano is created by adding the water to an already extracted espresso, not by extracting extra water through a single espresso puck. An Americano can be produced from lighter roasted coffees and roasts not generally associated with espresso, such as Ethiopian or Sumatran origins[1]. While some state that the Americano was created in Europe to deride the perceived American taste for weaker coffees, it is more likely that it was developed in the United States city of Seattle.A well - made Americano retains the subtle aroma of espresso with a lighter body and less bitterness.","id":2,"name":"Americano"},{"description":"Bicerin is a traditional warm coffee concoction native to Turin, Italy, made of espresso, drinking chocolate and whole milk served layered in a small rounded glass. The word bicerin is Piedmontese for small glass. The beverage has been known since the 18th-century and was famously praised by Alexandre Dumas in 1852. It is believed to be based on the 17th-century drink Bavareisa: the key distinction being that in a bicerin the three components are carefully layered in the glass rather than being mixed together.The Caffè Al Bicerin has been serving the drink in Torino's Piazza della Consolata since the 18th century, and some authorities believe that it was invented there. Others believe that it originated around 1704 in the Caffè Fiorio which still stands on what is now Via Po. In 2001 bicerin was recognized as a traditional Piedmontese product in the official bulletin of the Piedmont region.","id":3,"name":"Bicerin"},{"description":"Caffe Breve is an American variation of a latte: a milk-based espresso drink using steamed half-and-half mixture of milk and cream instead of milk.","id":4,"name":"Breve"},{"description":"Cafe Bombon was made popular in Valencia, Spain, and spread gradually to the rest of the country. It might have been re-created and modified to suit European tastebuds as in many parts of Asia such as Malaysia, Thailand and Singapore the same recipe for coffee which is called Kopi Susu Panas (Malaysia) or Kafe Ron (Thailand) has already been around for decades and is very popular in mamak stalls or kopitiams in Malaysia. A café bombón, however uses espresso served with sweetened condensed milk in a 1:1 ratio whereas the Asian version uses ground coffee and sweetened condensed milk at the same ratio. For café bombón, the condensed milk is added to the espresso. For visual effect, a glass is used, and the condensed milk is added slowly to sink underneath the coffee and create two separate bands of contrasting colour - though these layers are customarily stirred together before consumption. Some establishments merely serve an espresso with a sachet of condensed milk for patrons to make themselves.","id":5,"name":"Cafe Bombon"},{"description":"Café au lait is a French coffee drink. In Europe, café au lait stems from the same continental tradition as caffè latte in Italy, café con leche in Spain, kawa biała (white coffee) in Poland, Milchkaffee in Germany, Grosser Brauner in Austria, koffie verkeerd in Netherlands, and café com leite in Portugal, simply coffee with milk. In northern Europe, café au lait is the name most often used in coffee shops. It is a coffee beverage consisting strong or bold coffee (sometimes espresso) mixed with scalded milk in approximately a 1:1 ratio.","id":6,"name":"Café au lait"},{"description":"Café mélange is a black coffee mixed (french mélange) or covered with whipped cream, very popular in Austria, Switzerland and the Netherlands.","id":7,"name":"Café mélange"},{"description":"A cappuccino is a coffee-based drink made primarily from espresso and milk. It consists of one-third espresso, one-third heated milk and one-third milk foam and is generally served in a 6 to 8-ounce cup. The cappuccino is considered one of the original espresso drinks representative of Italian espresso cuisine and eventually Italian-American espresso cuisine. According to legend, the word cappuccino comes from the Capuchin monastic order. In 1683, soldiers fighting for Marco d'Aviano, a monk from the order, found a hoard of coffee following a victory over the Ottomans in the Battle of Vienna. The coffee was too strong for the European's tastes, so they diluted it with cream and honey. The resulting brown beverage matched the robes of the monk, and was dubbed cappuccino after the order[1]. However, it should be noted that this event predates espresso, one the key ingredient of a cappuccino by nearly 300 years.It is more likely that this event did lead to the popularization of coffee in the West and its rapid spread throughout Europe.","id":8,"name":"Cappuccino"},{"description":"Espresso is the name of a highly concentrated, bittersweet coffee originating in Italy in the early 20th century. Translated from Italian, the word espresso refers to the speed and single-serve nature of the coffee compared with slower and more communal methods of brewing coffee[1]. Each shot of espresso is made to order upon customer request, as opposed to being brewed in anticipation of demand. Typically served in a demitasse cup or used with other ingredients to create another beverage such as a cappuccino or a caffè corretto, espresso has become representative of coffee culture in many coffee-consuming regions.","id":9,"name":"Espresso"},{"description":"description1","id":10,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":12,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":13,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":14,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":15,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":16,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":17,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":18,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":19,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":20,"name":"Chocklate-2 "},{"description":"Order Cofee","id":21,"name":"Folded Cofee"},{"description":"test2112","id":22,"name":"test"},{"description":"test2112","id":23,"name":"test"},{"description":"test2112","id":24,"name":"test"},{"description":"test2112","id":25,"name":"test"},{"description":"test2112","id":26,"name":"test"},{"description":"test2112","id":27,"name":"test"},{"description":"Very cold , let it go","id":28,"name":"Freezing Coffee"},{"description":"string","id":29,"name":"string"},{"description":null,"id":30,"name":null},{"description":"ravi varama","id":31,"name":"herbal tea"},{"description":"ravi varama","id":32,"name":"herbal tea"},{"description":"ravi varama","id":33,"name":"herbal tea"},{"description":"ravi varama","id":34,"name":"herbal tea"},{"description":"ravi varama","id":35,"name":"herbal tea"},{"description":"ravi varama","id":36,"name":"herbal tea"},{"description":"ravi varama","id":37,"name":"herbal tea"},{"description":"ravi varama","id":38,"name":"herbal tea"},{"description":"ravi varama","id":39,"name":"herbal tea"},{"description":"ravi varama","id":40,"name":"herbal tea"},{"description":"ravi varama","id":41,"name":"herbal tea"},{"description":"ravi varama","id":42,"name":"herbal tea"},{"description":"ravi varama","id":43,"name":"herbal tea"},{"description":"ravi varama","id":44,"name":"herbal tea"},{"description":"ravi varama","id":45,"name":"herbal tea"},{"description":"ravi varama","id":46,"name":"herbal tea"},{"description":"ravi varama","id":47,"name":"herbal tea"},{"description":"ravi varama","id":48,"name":"herbal tea"},{"description":"ravi varama","id":49,"name":"herbal tea"},{"description":"ravi varama","id":50,"name":"herbal tea"},{"description":"ravi varama","id":51,"name":"herbal tea"},{"description":"ravi varama","id":52,"name":"herbal tea"},{"description":"ravi varama","id":53,"name":"herbal tea"},{"description":"ravi varama","id":55,"name":"herbal tea"},{"description":"ravi varama","id":56,"name":"herbal tea"},{"description":null,"id":57,"name":null},{"description":"ravi varama","id":58,"name":"herbal tea"},{"description":null,"id":59,"name":null},{"description":"Vijay like tea","id":60,"name":"Tea"},{"description":"viajy like coffe","id":61,"name":"cappuccino"},{"description":"Test5","id":62,"name":"Test5"},{"description":"Bind Coffee","id":63,"name":"Bended coffee"},{"description":"Bind Coffeesssss","id":64,"name":"Bended coffee"},{"description":"viajy like coffe","id":65,"name":"cappuccino"}] 
+ </msg>
+<msg time="2025-12-23T12:50:00.388386" level="INFO">${response_get} = &lt;Response [200]&gt;</msg>
+<var>${response_get}</var>
+<arg>${baseurl}/api/v1/Coffees</arg>
+<arg>params=id=${id}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.874233" elapsed="1.514223"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-23T12:50:00.390287" level="INFO">[{'description': 'An Americano is an espresso-based drink designed to resemble coffee brewed in a drip filter, considered popular in the United States of America. This drink consists of a single or double-shot of espresso combined with up to four or five ounces of hot water in a two-demitasse cup. It is important to note, that an Americano is created by adding the water to an already extracted espresso, not by extracting extra water through a single espresso puck. An Americano can be produced from lighter roasted coffees and roasts not generally associated with espresso, such as Ethiopian or Sumatran origins[1]. While some state that the Americano was created in Europe to deride the perceived American taste for weaker coffees, it is more likely that it was developed in the United States city of Seattle.A well - made Americano retains the subtle aroma of espresso with a lighter body and less bitterness.', 'id': 2, 'name': 'Americano'}, {'description': "Bicerin is a traditional warm coffee concoction native to Turin, Italy, made of espresso, drinking chocolate and whole milk served layered in a small rounded glass. The word bicerin is Piedmontese for small glass. The beverage has been known since the 18th-century and was famously praised by Alexandre Dumas in 1852. It is believed to be based on the 17th-century drink Bavareisa: the key distinction being that in a bicerin the three components are carefully layered in the glass rather than being mixed together.The Caffè Al Bicerin has been serving the drink in Torino's Piazza della Consolata since the 18th century, and some authorities believe that it was invented there. Others believe that it originated around 1704 in the Caffè Fiorio which still stands on what is now Via Po. In 2001 bicerin was recognized as a traditional Piedmontese product in the official bulletin of the Piedmont region.", 'id': 3, 'name': 'Bicerin'}, {'description': 'Caffe Breve is an American variation of a latte: a milk-based espresso drink using steamed half-and-half mixture of milk and cream instead of milk.', 'id': 4, 'name': 'Breve'}, {'description': 'Cafe Bombon was made popular in Valencia, Spain, and spread gradually to the rest of the country. It might have been re-created and modified to suit European tastebuds as in many parts of Asia such as Malaysia, Thailand and Singapore the same recipe for coffee which is called Kopi Susu Panas (Malaysia) or Kafe Ron (Thailand) has already been around for decades and is very popular in mamak stalls or kopitiams in Malaysia. A café bombón, however uses espresso served with sweetened condensed milk in a 1:1 ratio whereas the Asian version uses ground coffee and sweetened condensed milk at the same ratio. For café bombón, the condensed milk is added to the espresso. For visual effect, a glass is used, and the condensed milk is added slowly to sink underneath the coffee and create two separate bands of contrasting colour - though these layers are customarily stirred together before consumption. Some establishments merely serve an espresso with a sachet of condensed milk for patrons to make themselves.', 'id': 5, 'name': 'Cafe Bombon'}, {'description': 'Café au lait is a French coffee drink. In Europe, café au lait stems from the same continental tradition as caffè latte in Italy, café con leche in Spain, kawa biała (white coffee) in Poland, Milchkaffee in Germany, Grosser Brauner in Austria, koffie verkeerd in Netherlands, and café com leite in Portugal, simply coffee with milk. In northern Europe, café au lait is the name most often used in coffee shops. It is a coffee beverage consisting strong or bold coffee (sometimes espresso) mixed with scalded milk in approximately a 1:1 ratio.', 'id': 6, 'name': 'Café au lait'}, {'description': 'Café mélange is a black coffee mixed (french mélange) or covered with whipped cream, very popular in Austria, Switzerland and the Netherlands.', 'id': 7, 'name': 'Café mélange'}, {'description': "A cappuccino is a coffee-based drink made primarily from espresso and milk. It consists of one-third espresso, one-third heated milk and one-third milk foam and is generally served in a 6 to 8-ounce cup. The cappuccino is considered one of the original espresso drinks representative of Italian espresso cuisine and eventually Italian-American espresso cuisine. According to legend, the word cappuccino comes from the Capuchin monastic order. In 1683, soldiers fighting for Marco d'Aviano, a monk from the order, found a hoard of coffee following a victory over the Ottomans in the Battle of Vienna. The coffee was too strong for the European's tastes, so they diluted it with cream and honey. The resulting brown beverage matched the robes of the monk, and was dubbed cappuccino after the order[1]. However, it should be noted that this event predates espresso, one the key ingredient of a cappuccino by nearly 300 years.It is more likely that this event did lead to the popularization of coffee in the West and its rapid spread throughout Europe.", 'id': 8, 'name': 'Cappuccino'}, {'description': 'Espresso is the name of a highly concentrated, bittersweet coffee originating in Italy in the early 20th century. Translated from Italian, the word espresso refers to the speed and single-serve nature of the coffee compared with slower and more communal methods of brewing coffee[1]. Each shot of espresso is made to order upon customer request, as opposed to being brewed in anticipation of demand. Typically served in a demitasse cup or used with other ingredients to create another beverage such as a cappuccino or a caffè corretto, espresso has become representative of coffee culture in many coffee-consuming regions.', 'id': 9, 'name': 'Espresso'}, {'description': 'description1', 'id': 10, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 12, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 13, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 14, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 15, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 16, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 17, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 18, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 19, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 20, 'name': 'Chocklate-2 '}, {'description': 'Order Cofee', 'id': 21, 'name': 'Folded Cofee'}, {'description': 'test2112', 'id': 22, 'name': 'test'}, {'description': 'test2112', 'id': 23, 'name': 'test'}, {'description': 'test2112', 'id': 24, 'name': 'test'}, {'description': 'test2112', 'id': 25, 'name': 'test'}, {'description': 'test2112', 'id': 26, 'name': 'test'}, {'description': 'test2112', 'id': 27, 'name': 'test'}, {'description': 'Very cold , let it go', 'id': 28, 'name': 'Freezing Coffee'}, {'description': 'string', 'id': 29, 'name': 'string'}, {'description': None, 'id': 30, 'name': None}, {'description': 'ravi varama', 'id': 31, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 32, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 33, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 34, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 35, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 36, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 37, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 38, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 39, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 40, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 41, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 42, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 43, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 44, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 45, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 46, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 47, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 48, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 49, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 50, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 51, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 52, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 53, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 55, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 56, 'name': 'herbal tea'}, {'description': None, 'id': 57, 'name': None}, {'description': 'ravi varama', 'id': 58, 'name': 'herbal tea'}, {'description': None, 'id': 59, 'name': None}, {'description': 'Vijay like tea', 'id': 60, 'name': 'Tea'}, {'description': 'viajy like coffe', 'id': 61, 'name': 'cappuccino'}, {'description': 'Test5', 'id': 62, 'name': 'Test5'}, {'description': 'Bind Coffee', 'id': 63, 'name': 'Bended coffee'}, {'description': 'Bind Coffeesssss', 'id': 64, 'name': 'Bended coffee'}, {'description': 'viajy like coffe', 'id': 65, 'name': 'cappuccino'}]</msg>
+<arg>${response_get.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.388755" elapsed="0.001971"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response_get}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.391178" elapsed="0.000421"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>GET test case passed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.391930" elapsed="0.000629"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:58.873245" elapsed="1.519663"/>
+</test>
+<test id="s1-s9-t3" name="Delete Test case" line="32">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-23T12:50:00.394520" level="INFO">${headers} = {'accept': 'text/plain', 'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=text/plain</arg>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.394089" elapsed="0.000507"/>
+</kw>
+<kw name="DELETE" owner="RequestsLibrary">
+<msg time="2025-12-23T12:50:03.411194" level="INFO">DELETE Request : url=https://webservice.toscacloud.com/api/v1/Coffees?id=65 
+ path_url=/api/v1/Coffees?id=65 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'accept': 'text/plain', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-12-23T12:50:03.411331" level="INFO">DELETE Response : url=https://webservice.toscacloud.com/api/v1/Coffees?id=65 
+ status=200, reason=OK 
+ headers={'Content-Length': '0', 'Date': 'Tue, 23 Dec 2025 07:20:01 GMT', 'Server': 'Microsoft-IIS/10.0', 'Set-Cookie': 'ARRAffinity=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;Secure;Domain=webservice.toscacloud.com, ARRAffinitySameSite=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;SameSite=None;Secure;Domain=webservice.toscacloud.com', 'Strict-Transport-Security': 'max-age=31536000', 'api-supported-versions': '1.0', 'Content-Security-Policy': "default-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'", 'X-Frame-Options': 'DENY', 'X-Content-Type-Options': 'nosniff'} 
+ body=None 
+ </msg>
+<msg time="2025-12-23T12:50:03.411531" level="INFO">${delete_response} = &lt;Response [200]&gt;</msg>
+<var>${delete_response}</var>
+<arg>${baseurl}/api/v1/Coffees</arg>
+<arg>params=id=${id}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a DELETE request.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.394844" elapsed="3.016730"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${delete_response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.411775" elapsed="0.000350"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Delete test case passed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.412388" elapsed="0.000284"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:00.393423" elapsed="3.019462"/>
+</test>
+<status status="PASS" start="2025-12-23T12:49:56.308694" elapsed="7.105033"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 9 executions.</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.197000" elapsed="147.074000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="7" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">REGRESSION</stat>
+<stat pass="0" fail="1" skip="0">SMOKE</stat>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="10" fail="7" skip="0">Testcases</stat>
+<stat name="Forloop" id="s1-s1" pass="2" fail="0" skip="0">Testcases.Forloop</stat>
+<stat name="HRM" id="s1-s2" pass="2" fail="0" skip="0">Testcases.HRM</stat>
+<stat name="Linkdin" id="s1-s3" pass="0" fail="1" skip="0">Testcases.Linkdin</stat>
+<stat name="Login" id="s1-s4" pass="0" fail="1" skip="0">Testcases.Login</stat>
+<stat name="Test6" id="s1-s5" pass="0" fail="3" skip="0">Testcases.Test6</stat>
+<stat name="TestDemo1" id="s1-s6" pass="0" fail="1" skip="0">Testcases.TestDemo1</stat>
+<stat name="TestDemo4" id="s1-s7" pass="3" fail="0" skip="0">Testcases.TestDemo4</stat>
+<stat name="TestDemo5excel" id="s1-s8" pass="0" fail="1" skip="0">Testcases.TestDemo5excel</stat>
+<stat name="Testdemo7" id="s1-s9" pass="3" fail="0" skip="0">Testcases.Testdemo7</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:52.205159" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.273712" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:52.138660" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.187625" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:52.184202" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.251222" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:53.358459" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Linkdin.robot' on line 5: Importing library 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries\csv_utilities.py' failed: ModuleNotFoundError: No module named 'six.moves'
+Traceback (most recent call last):
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries\csv_utilities.py", line 1, in &lt;module&gt;
+    import pandas as pd
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\__init__.py", line 61, in &lt;module&gt;
+    from pandas.core.api import (
+    ...&lt;62 lines&gt;...
+    )
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\core\api.py", line 1, in &lt;module&gt;
+    from pandas._libs import (
+    ...&lt;4 lines&gt;...
+    )
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\_libs\__init__.py", line 18, in &lt;module&gt;
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+  File "pandas/_libs/hashtable.pyx", line 1, in init pandas._libs.hashtable
+  File "pandas/_libs/missing.pyx", line 1, in init pandas._libs.missing
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\_libs\tslibs\__init__.py", line 40, in &lt;module&gt;
+    from pandas._libs.tslibs.conversion import localize_pydatetime
+  File "pandas/_libs/tslibs/conversion.pyx", line 1, in init pandas._libs.tslibs.conversion
+  File "pandas/_libs/tslibs/offsets.pyx", line 1, in init pandas._libs.tslibs.offsets
+  File "pandas/_libs/tslibs/timestamps.pyx", line 1, in init pandas._libs.tslibs.timestamps
+  File "pandas/_libs/tslibs/timedeltas.pyx", line 1, in init pandas._libs.tslibs.timedeltas
+  File "pandas/_libs/tslibs/timezones.pyx", line 24, in init pandas._libs.tslibs.timezones
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\dateutil\tz\__init__.py", line 2, in &lt;module&gt;
+    from .tz import *
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\dateutil\tz\tz.py", line 21, in &lt;module&gt;
+    from six.moves import _thread
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:52.330769" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.386390" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:55.307227" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Login.robot", line 0</msg>
+<msg time="2025-12-23T12:49:55.307481" level="ERROR">In source file:
+  File "C:/Users/AIFA USER 77/PycharmProjects/DDTTESTING/TestData/Lo.xlsx", line 0</msg>
+<msg time="2025-12-23T12:49:55.344562" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: AttributeError: partially initialized module 'pandas' from 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\__init__.py' has no attribute '_pandas_datetime_CAPI' (most likely due to a circular import)</msg>
+<msg time="2025-12-23T12:49:52.202539" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.278491" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:52.216731" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.254346" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:52.278240" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.336059" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:52.157588" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.212406" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:55.749438" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:56.075684" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:58.006870" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+</errors>
+</robot>

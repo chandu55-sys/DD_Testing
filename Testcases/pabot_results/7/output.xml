@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:49:52.175065" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="TestDemo5excel" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot">
+<test id="s1-s1-t1" name="Login Test" line="12">
+<status status="FAIL" start="2025-12-23T12:49:52.952212" elapsed="0.000700">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2025-12-23T12:49:52.285806" elapsed="0.667862"/>
+</suite>
+<status status="FAIL" start="2025-12-23T12:49:52.216358" elapsed="0.738553"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="0" fail="1" skip="0">Testcases</stat>
+<stat name="TestDemo5excel" id="s1-s1" pass="0" fail="1" skip="0">Testcases.TestDemo5excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:52.157588" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.212406" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+</errors>
+</robot>

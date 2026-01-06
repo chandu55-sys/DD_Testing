@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:49:52.235810" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="TestDemo1" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo1.robot">
+<test id="s1-s1-t1" name="Verify the incorrect logins" line="13">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.896964" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.896375" elapsed="5.026119"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:49:57.922887" elapsed="2.412823"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.336103" elapsed="1.087314"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.893292" elapsed="8.530371"/>
+</kw>
+<kw name="Login Details">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:01.425030" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:01.424642" elapsed="0.331001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:01.756535" level="INFO">Typing text 'admin1231' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>admin1231</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:01.756001" elapsed="0.561744"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:02.318812" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.318358" elapsed="1.541700"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:01.424057" elapsed="2.436252"/>
+</kw>
+<kw name="Wait Until Error Message Is Visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${eror_Message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.861148" elapsed="0.505899"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:03.860616" elapsed="0.506659"/>
+</kw>
+<kw name="Verify The Error Message">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:04.408570" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${eror_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:04.368179" elapsed="0.040493"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:50:04.408989" elapsed="0.000473"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:04.648691" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-23T12:50:04.649005" level="FAIL">Element with locator 'Invalid credentials' not found.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-12-23T12:50:04.409824" elapsed="0.372802">Element with locator 'Invalid credentials' not found.</status>
+</kw>
+<status status="FAIL" start="2025-12-23T12:50:04.367615" elapsed="0.415417">Element with locator 'Invalid credentials' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:50:04.783676" elapsed="2.348653"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.891695" elapsed="14.240837">Element with locator 'Invalid credentials' not found.</status>
+</test>
+<doc>verify error message</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.319389" elapsed="14.813882"/>
+</suite>
+<status status="FAIL" start="2025-12-23T12:49:52.257900" elapsed="14.877028"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="0" fail="1" skip="0">Testcases</stat>
+<stat name="TestDemo1" id="s1-s1" pass="0" fail="1" skip="0">Testcases.TestDemo1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:52.216731" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.254346" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+</errors>
+</robot>

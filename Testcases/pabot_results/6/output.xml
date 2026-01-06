@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:49:52.308963" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="TestDemo4" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo4.robot">
+<test id="s1-s1-t1" name="invalid username" line="15">
+<kw name="Verify the incorrect logins">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.973240" elapsed="0.000637"/>
+</kw>
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.975993" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.975420" elapsed="7.180305"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.156135" elapsed="2.465710"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:02.622175" elapsed="4.072601"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.974298" elapsed="13.720758"/>
+</kw>
+<kw name="Login Details">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:06.696488" level="INFO">Typing text 'Admin1' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:06.696106" elapsed="6.267324"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:12.964411" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:12.963857" elapsed="6.152526"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:19.116826" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:19.116594" elapsed="10.110302"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-23T12:50:06.695430" elapsed="22.531919"/>
+</kw>
+<kw name="Wait Until Error Message Is Visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${eror_Message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:29.228997" elapsed="4.045669"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:29.227969" elapsed="4.046878"/>
+</kw>
+<kw name="Verify The Error Message">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:37.297920" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${eror_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:33.275256" elapsed="4.022721"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:50:37.298146" elapsed="0.000278"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:33.275016" elapsed="4.023502"/>
+</kw>
+<arg>Admin1</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2025-12-23T12:49:52.966561" elapsed="44.332018"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:50:37.298779" elapsed="4.110147"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.964802" elapsed="48.444315"/>
+</test>
+<test id="s1-s1-t2" name="Invalid passowrd" line="16">
+<kw name="Verify the incorrect logins">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-23T12:50:41.410869" elapsed="0.000338"/>
+</kw>
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:41.412279" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:50:41.411890" elapsed="8.446581"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:50:49.858850" elapsed="2.062258"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:50:51.921392" elapsed="4.039553"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:41.411459" elapsed="14.549635"/>
+</kw>
+<kw name="Login Details">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:50:55.961943" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:50:55.961691" elapsed="6.123568"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:02.085976" level="INFO">Typing text 'admin12' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:02.085551" elapsed="6.138675"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:08.225094" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:08.224695" elapsed="10.127044"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-23T12:50:55.961303" elapsed="22.390597"/>
+</kw>
+<kw name="Wait Until Error Message Is Visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${eror_Message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:51:18.352461" elapsed="4.025174"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:51:18.352116" elapsed="4.025768"/>
+</kw>
+<kw name="Verify The Error Message">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:26.404078" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${eror_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:22.378431" elapsed="4.025697"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:51:26.404283" elapsed="0.000239"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:51:22.378113" elapsed="4.026510"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin12</arg>
+<status status="PASS" start="2025-12-23T12:50:41.410393" elapsed="44.994291"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:51:26.405007" elapsed="4.070153"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:41.409712" elapsed="49.065620"/>
+</test>
+<test id="s1-s1-t3" name="Special characters" line="17">
+<kw name="Verify the incorrect logins">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-23T12:51:30.477318" elapsed="0.000401"/>
+</kw>
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:30.478972" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-23T12:51:30.478597" elapsed="8.196984"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-23T12:51:38.675794" elapsed="2.037708"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:51:40.713688" elapsed="4.030325"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:51:30.478063" elapsed="14.266142"/>
+</kw>
+<kw name="Login Details">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:44.745297" level="INFO">Typing text '@33' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:44.744982" elapsed="6.132955"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:50.878369" level="INFO">Typing text 'leaning' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:50.878126" elapsed="6.108308"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:51:56.986945" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:51:56.986682" elapsed="10.102339"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-23T12:51:44.744467" elapsed="22.344687"/>
+</kw>
+<kw name="Wait Until Error Message Is Visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${eror_Message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-23T12:52:07.089606" elapsed="4.038598"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:52:07.089338" elapsed="4.039007"/>
+</kw>
+<kw name="Verify The Error Message">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:52:15.172947" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${eror_Message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-23T12:52:11.129333" elapsed="4.043702"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:52:15.173304" elapsed="0.000378"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:52:11.128532" elapsed="4.045300"/>
+</kw>
+<arg>@33</arg>
+<arg>leaning</arg>
+<status status="PASS" start="2025-12-23T12:51:30.476746" elapsed="44.697190"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:52:15.174243" elapsed="4.095556"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:51:30.475936" elapsed="48.794019"/>
+</test>
+<doc>verify error message</doc>
+<status status="PASS" start="2025-12-23T12:49:52.416758" elapsed="146.853806"/>
+</suite>
+<status status="PASS" start="2025-12-23T12:49:52.342305" elapsed="146.929551"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="3" fail="0" skip="0">Testcases</stat>
+<stat name="TestDemo4" id="s1-s1" pass="3" fail="0" skip="0">Testcases.TestDemo4</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:52.278240" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.336059" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+</errors>
+</robot>

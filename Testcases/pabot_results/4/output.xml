@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:49:52.232035" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="Test6" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Test6.robot">
+<test id="s1-s1-t1" name="Validate UnSuccesful Login" line="23">
+<kw name="open the browser with the url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.926743" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-12-23T12:49:52.926883" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-12-23T12:49:52.927113" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</msg>
+<arg>${browser_name}</arg>
+<arg>executable_path=resources/${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.926054" elapsed="0.004273">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:49:52.930735" elapsed="0.000075"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.924048" elapsed="0.007038">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Close Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.932372" elapsed="0.000264"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.931631" elapsed="0.001174"/>
+</kw>
+<tag>REGRESSION</tag>
+<tag>SMOKE</tag>
+<status status="FAIL" start="2025-12-23T12:49:52.921874" elapsed="0.011055">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</test>
+<test id="s1-s1-t2" name="End to end ecommerce Product validation" line="31">
+<kw name="open the browser with the url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.935315" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-12-23T12:49:52.935433" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-12-23T12:49:52.935603" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</msg>
+<arg>${browser_name}</arg>
+<arg>executable_path=resources/${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.934859" elapsed="0.001901">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:49:52.937076" elapsed="0.000068"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.934376" elapsed="0.002981">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Close Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.938365" elapsed="0.000227"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.937824" elapsed="0.000916"/>
+</kw>
+<tag>REGRESSION</tag>
+<status status="FAIL" start="2025-12-23T12:49:52.933583" elapsed="0.005275">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</test>
+<test id="s1-s1-t3" name="Select the Form and navigate to Child window" line="43">
+<kw name="open the browser with the url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-12-23T12:49:52.941977" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-12-23T12:49:52.942072" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-12-23T12:49:52.942228" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</msg>
+<arg>${browser_name}</arg>
+<arg>executable_path=resources/${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.941565" elapsed="0.001949">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-12-23T12:49:52.943846" elapsed="0.000072"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.941009" elapsed="0.003129">TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</kw>
+<kw name="Close Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-23T12:49:52.946128" elapsed="0.000263"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:52.944592" elapsed="0.001948"/>
+</kw>
+<status status="FAIL" start="2025-12-23T12:49:52.939446" elapsed="0.007200">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" start="2025-12-23T12:49:52.339401" elapsed="0.608025"/>
+</suite>
+<status status="FAIL" start="2025-12-23T12:49:52.282938" elapsed="0.667192"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">REGRESSION</stat>
+<stat pass="0" fail="1" skip="0">SMOKE</stat>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="0" fail="3" skip="0">Testcases</stat>
+<stat name="Test6" id="s1-s1" pass="0" fail="3" skip="0">Testcases.Test6</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:52.202539" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.278491" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+</errors>
+</robot>

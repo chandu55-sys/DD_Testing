@@ -1,0 +1,4 @@
+Test Name,username,password
+invalid username,Admin1,admin123
+Invalid password,Admin,admin12
+Special characters,@33,leaning

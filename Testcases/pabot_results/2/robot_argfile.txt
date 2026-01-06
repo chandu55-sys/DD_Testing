@@ -1,0 +1,16 @@
+--suite Testcases.Linkdin
+--variable CALLER_ID:3acac053f3264fd4ab41c48d2b0a0e2d
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:2
+--variable PABOTLASTLEVEL:Testcases.Linkdin
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\2
+--consolecolors off
+--consolemarkers off
+.

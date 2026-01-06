@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:49:55.992106" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="Testdemo7" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\testdemo7.robot">
+<test id="s1-s1-t1" name="Post Test case" line="11">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-23T12:49:57.999033" level="INFO">${headers} = {'accept': 'text/plain', 'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=text/plain</arg>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-23T12:49:57.997564" elapsed="0.001578"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-12-23T12:49:58.001192" level="INFO">Creating Session using : alias=mysession, url=https://webservice.toscacloud.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${baseurl}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-12-23T12:49:57.999617" elapsed="0.002335"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.005728" level="INFO">${req} = {'description': 'viajy like coffe', 'id': '1', 'name': 'cappuccino'}</msg>
+<var>${req}</var>
+<arg>description=viajy like coffe</arg>
+<arg>id=1</arg>
+<arg>name=cappuccino</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.002836" elapsed="0.003016"/>
+</kw>
+<kw name="Post Request" owner="RequestsLibrary">
+<msg time="2025-12-23T12:49:58.006870" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg time="2025-12-23T12:49:58.867452" level="INFO">POST Request : url=https://webservice.toscacloud.com/api/v1/Coffees 
+ path_url=/api/v1/Coffees 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'accept': 'text/plain', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '68'} 
+ body=b'{"description": "viajy like coffe", "id": "1", "name": "cappuccino"}' 
+ </msg>
+<msg time="2025-12-23T12:49:58.867595" level="INFO">POST Response : url=https://webservice.toscacloud.com/api/v1/Coffees 
+ status=200, reason=OK 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 23 Dec 2025 07:19:57 GMT', 'Server': 'Microsoft-IIS/10.0', 'Content-Encoding': 'gzip', 'Set-Cookie': 'ARRAffinity=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;Secure;Domain=webservice.toscacloud.com, ARRAffinitySameSite=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;SameSite=None;Secure;Domain=webservice.toscacloud.com', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'Strict-Transport-Security': 'max-age=31536000', 'api-supported-versions': '1.0', 'Content-Security-Policy': "default-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'", 'X-Frame-Options': 'DENY', 'X-Content-Type-Options': 'nosniff'} 
+ body={"description":"viajy like coffe","id":65,"name":"cappuccino"} 
+ </msg>
+<msg time="2025-12-23T12:49:58.867676" level="INFO">C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'webservice.toscacloud.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-12-23T12:49:58.867857" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/api/v1/Coffees</arg>
+<arg>json=${req}</arg>
+<arg>headers=${headers}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.006652" elapsed="0.861263"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.868624" level="INFO">200</msg>
+<arg>${response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.868107" elapsed="0.000578"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.869287" level="INFO">{"description":"viajy like coffe","id":65,"name":"cappuccino"}</msg>
+<arg>${response.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.868816" elapsed="0.000536"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.869939" level="INFO">{'description': 'viajy like coffe', 'id': 65, 'name': 'cappuccino'}</msg>
+<arg>${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.869475" elapsed="0.000539"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.870137" elapsed="0.000526"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-12-23T12:49:58.871315" level="INFO">${id} = 65</msg>
+<var>${id}</var>
+<arg>${response.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.870800" elapsed="0.000554"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.871689" level="INFO">${id} = 65</msg>
+<arg>${id}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.871496" elapsed="0.000245"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>viajy like coffe</arg>
+<arg>${response.json()}[description]</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.871859" elapsed="0.000543"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.872561" elapsed="0.000249"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:57.992754" elapsed="0.880203"/>
+</test>
+<test id="s1-s1-t2" name="Get Test Case" line="25">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-23T12:49:58.874042" level="INFO">${headers} = {'accept': 'text/plain', 'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=text/plain</arg>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.873737" elapsed="0.000345"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-12-23T12:50:00.387702" level="INFO">GET Request : url=https://webservice.toscacloud.com/api/v1/Coffees?id=65 
+ path_url=/api/v1/Coffees?id=65 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'accept': 'text/plain', 'Connection': 'keep-alive', 'Content-Type': 'application/json'} 
+ body=None 
+ </msg>
+<msg time="2025-12-23T12:50:00.387908" level="INFO">GET Response : url=https://webservice.toscacloud.com/api/v1/Coffees?id=65 
+ status=200, reason=OK 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 23 Dec 2025 07:19:59 GMT', 'Server': 'Microsoft-IIS/10.0', 'Content-Encoding': 'gzip', 'Set-Cookie': 'ARRAffinity=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;Secure;Domain=webservice.toscacloud.com, ARRAffinitySameSite=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;SameSite=None;Secure;Domain=webservice.toscacloud.com', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'Strict-Transport-Security': 'max-age=31536000', 'api-supported-versions': '1.0', 'Content-Security-Policy': "default-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'", 'X-Frame-Options': 'DENY', 'X-Content-Type-Options': 'nosniff'} 
+ body=[{"description":"An Americano is an espresso-based drink designed to resemble coffee brewed in a drip filter, considered popular in the United States of America. This drink consists of a single or double-shot of espresso combined with up to four or five ounces of hot water in a two-demitasse cup. It is important to note, that an Americano is created by adding the water to an already extracted espresso, not by extracting extra water through a single espresso puck. An Americano can be produced from lighter roasted coffees and roasts not generally associated with espresso, such as Ethiopian or Sumatran origins[1]. While some state that the Americano was created in Europe to deride the perceived American taste for weaker coffees, it is more likely that it was developed in the United States city of Seattle.A well - made Americano retains the subtle aroma of espresso with a lighter body and less bitterness.","id":2,"name":"Americano"},{"description":"Bicerin is a traditional warm coffee concoction native to Turin, Italy, made of espresso, drinking chocolate and whole milk served layered in a small rounded glass. The word bicerin is Piedmontese for small glass. The beverage has been known since the 18th-century and was famously praised by Alexandre Dumas in 1852. It is believed to be based on the 17th-century drink Bavareisa: the key distinction being that in a bicerin the three components are carefully layered in the glass rather than being mixed together.The Caffè Al Bicerin has been serving the drink in Torino's Piazza della Consolata since the 18th century, and some authorities believe that it was invented there. Others believe that it originated around 1704 in the Caffè Fiorio which still stands on what is now Via Po. In 2001 bicerin was recognized as a traditional Piedmontese product in the official bulletin of the Piedmont region.","id":3,"name":"Bicerin"},{"description":"Caffe Breve is an American variation of a latte: a milk-based espresso drink using steamed half-and-half mixture of milk and cream instead of milk.","id":4,"name":"Breve"},{"description":"Cafe Bombon was made popular in Valencia, Spain, and spread gradually to the rest of the country. It might have been re-created and modified to suit European tastebuds as in many parts of Asia such as Malaysia, Thailand and Singapore the same recipe for coffee which is called Kopi Susu Panas (Malaysia) or Kafe Ron (Thailand) has already been around for decades and is very popular in mamak stalls or kopitiams in Malaysia. A café bombón, however uses espresso served with sweetened condensed milk in a 1:1 ratio whereas the Asian version uses ground coffee and sweetened condensed milk at the same ratio. For café bombón, the condensed milk is added to the espresso. For visual effect, a glass is used, and the condensed milk is added slowly to sink underneath the coffee and create two separate bands of contrasting colour - though these layers are customarily stirred together before consumption. Some establishments merely serve an espresso with a sachet of condensed milk for patrons to make themselves.","id":5,"name":"Cafe Bombon"},{"description":"Café au lait is a French coffee drink. In Europe, café au lait stems from the same continental tradition as caffè latte in Italy, café con leche in Spain, kawa biała (white coffee) in Poland, Milchkaffee in Germany, Grosser Brauner in Austria, koffie verkeerd in Netherlands, and café com leite in Portugal, simply coffee with milk. In northern Europe, café au lait is the name most often used in coffee shops. It is a coffee beverage consisting strong or bold coffee (sometimes espresso) mixed with scalded milk in approximately a 1:1 ratio.","id":6,"name":"Café au lait"},{"description":"Café mélange is a black coffee mixed (french mélange) or covered with whipped cream, very popular in Austria, Switzerland and the Netherlands.","id":7,"name":"Café mélange"},{"description":"A cappuccino is a coffee-based drink made primarily from espresso and milk. It consists of one-third espresso, one-third heated milk and one-third milk foam and is generally served in a 6 to 8-ounce cup. The cappuccino is considered one of the original espresso drinks representative of Italian espresso cuisine and eventually Italian-American espresso cuisine. According to legend, the word cappuccino comes from the Capuchin monastic order. In 1683, soldiers fighting for Marco d'Aviano, a monk from the order, found a hoard of coffee following a victory over the Ottomans in the Battle of Vienna. The coffee was too strong for the European's tastes, so they diluted it with cream and honey. The resulting brown beverage matched the robes of the monk, and was dubbed cappuccino after the order[1]. However, it should be noted that this event predates espresso, one the key ingredient of a cappuccino by nearly 300 years.It is more likely that this event did lead to the popularization of coffee in the West and its rapid spread throughout Europe.","id":8,"name":"Cappuccino"},{"description":"Espresso is the name of a highly concentrated, bittersweet coffee originating in Italy in the early 20th century. Translated from Italian, the word espresso refers to the speed and single-serve nature of the coffee compared with slower and more communal methods of brewing coffee[1]. Each shot of espresso is made to order upon customer request, as opposed to being brewed in anticipation of demand. Typically served in a demitasse cup or used with other ingredients to create another beverage such as a cappuccino or a caffè corretto, espresso has become representative of coffee culture in many coffee-consuming regions.","id":9,"name":"Espresso"},{"description":"description1","id":10,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":12,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":13,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":14,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":15,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":16,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":17,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":18,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":19,"name":"Chocklate-2 "},{"description":"Trial 2 for the inter","id":20,"name":"Chocklate-2 "},{"description":"Order Cofee","id":21,"name":"Folded Cofee"},{"description":"test2112","id":22,"name":"test"},{"description":"test2112","id":23,"name":"test"},{"description":"test2112","id":24,"name":"test"},{"description":"test2112","id":25,"name":"test"},{"description":"test2112","id":26,"name":"test"},{"description":"test2112","id":27,"name":"test"},{"description":"Very cold , let it go","id":28,"name":"Freezing Coffee"},{"description":"string","id":29,"name":"string"},{"description":null,"id":30,"name":null},{"description":"ravi varama","id":31,"name":"herbal tea"},{"description":"ravi varama","id":32,"name":"herbal tea"},{"description":"ravi varama","id":33,"name":"herbal tea"},{"description":"ravi varama","id":34,"name":"herbal tea"},{"description":"ravi varama","id":35,"name":"herbal tea"},{"description":"ravi varama","id":36,"name":"herbal tea"},{"description":"ravi varama","id":37,"name":"herbal tea"},{"description":"ravi varama","id":38,"name":"herbal tea"},{"description":"ravi varama","id":39,"name":"herbal tea"},{"description":"ravi varama","id":40,"name":"herbal tea"},{"description":"ravi varama","id":41,"name":"herbal tea"},{"description":"ravi varama","id":42,"name":"herbal tea"},{"description":"ravi varama","id":43,"name":"herbal tea"},{"description":"ravi varama","id":44,"name":"herbal tea"},{"description":"ravi varama","id":45,"name":"herbal tea"},{"description":"ravi varama","id":46,"name":"herbal tea"},{"description":"ravi varama","id":47,"name":"herbal tea"},{"description":"ravi varama","id":48,"name":"herbal tea"},{"description":"ravi varama","id":49,"name":"herbal tea"},{"description":"ravi varama","id":50,"name":"herbal tea"},{"description":"ravi varama","id":51,"name":"herbal tea"},{"description":"ravi varama","id":52,"name":"herbal tea"},{"description":"ravi varama","id":53,"name":"herbal tea"},{"description":"ravi varama","id":55,"name":"herbal tea"},{"description":"ravi varama","id":56,"name":"herbal tea"},{"description":null,"id":57,"name":null},{"description":"ravi varama","id":58,"name":"herbal tea"},{"description":null,"id":59,"name":null},{"description":"Vijay like tea","id":60,"name":"Tea"},{"description":"viajy like coffe","id":61,"name":"cappuccino"},{"description":"Test5","id":62,"name":"Test5"},{"description":"Bind Coffee","id":63,"name":"Bended coffee"},{"description":"Bind Coffeesssss","id":64,"name":"Bended coffee"},{"description":"viajy like coffe","id":65,"name":"cappuccino"}] 
+ </msg>
+<msg time="2025-12-23T12:50:00.388386" level="INFO">${response_get} = &lt;Response [200]&gt;</msg>
+<var>${response_get}</var>
+<arg>${baseurl}/api/v1/Coffees</arg>
+<arg>params=id=${id}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2025-12-23T12:49:58.874233" elapsed="1.514223"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-23T12:50:00.390287" level="INFO">[{'description': 'An Americano is an espresso-based drink designed to resemble coffee brewed in a drip filter, considered popular in the United States of America. This drink consists of a single or double-shot of espresso combined with up to four or five ounces of hot water in a two-demitasse cup. It is important to note, that an Americano is created by adding the water to an already extracted espresso, not by extracting extra water through a single espresso puck. An Americano can be produced from lighter roasted coffees and roasts not generally associated with espresso, such as Ethiopian or Sumatran origins[1]. While some state that the Americano was created in Europe to deride the perceived American taste for weaker coffees, it is more likely that it was developed in the United States city of Seattle.A well - made Americano retains the subtle aroma of espresso with a lighter body and less bitterness.', 'id': 2, 'name': 'Americano'}, {'description': "Bicerin is a traditional warm coffee concoction native to Turin, Italy, made of espresso, drinking chocolate and whole milk served layered in a small rounded glass. The word bicerin is Piedmontese for small glass. The beverage has been known since the 18th-century and was famously praised by Alexandre Dumas in 1852. It is believed to be based on the 17th-century drink Bavareisa: the key distinction being that in a bicerin the three components are carefully layered in the glass rather than being mixed together.The Caffè Al Bicerin has been serving the drink in Torino's Piazza della Consolata since the 18th century, and some authorities believe that it was invented there. Others believe that it originated around 1704 in the Caffè Fiorio which still stands on what is now Via Po. In 2001 bicerin was recognized as a traditional Piedmontese product in the official bulletin of the Piedmont region.", 'id': 3, 'name': 'Bicerin'}, {'description': 'Caffe Breve is an American variation of a latte: a milk-based espresso drink using steamed half-and-half mixture of milk and cream instead of milk.', 'id': 4, 'name': 'Breve'}, {'description': 'Cafe Bombon was made popular in Valencia, Spain, and spread gradually to the rest of the country. It might have been re-created and modified to suit European tastebuds as in many parts of Asia such as Malaysia, Thailand and Singapore the same recipe for coffee which is called Kopi Susu Panas (Malaysia) or Kafe Ron (Thailand) has already been around for decades and is very popular in mamak stalls or kopitiams in Malaysia. A café bombón, however uses espresso served with sweetened condensed milk in a 1:1 ratio whereas the Asian version uses ground coffee and sweetened condensed milk at the same ratio. For café bombón, the condensed milk is added to the espresso. For visual effect, a glass is used, and the condensed milk is added slowly to sink underneath the coffee and create two separate bands of contrasting colour - though these layers are customarily stirred together before consumption. Some establishments merely serve an espresso with a sachet of condensed milk for patrons to make themselves.', 'id': 5, 'name': 'Cafe Bombon'}, {'description': 'Café au lait is a French coffee drink. In Europe, café au lait stems from the same continental tradition as caffè latte in Italy, café con leche in Spain, kawa biała (white coffee) in Poland, Milchkaffee in Germany, Grosser Brauner in Austria, koffie verkeerd in Netherlands, and café com leite in Portugal, simply coffee with milk. In northern Europe, café au lait is the name most often used in coffee shops. It is a coffee beverage consisting strong or bold coffee (sometimes espresso) mixed with scalded milk in approximately a 1:1 ratio.', 'id': 6, 'name': 'Café au lait'}, {'description': 'Café mélange is a black coffee mixed (french mélange) or covered with whipped cream, very popular in Austria, Switzerland and the Netherlands.', 'id': 7, 'name': 'Café mélange'}, {'description': "A cappuccino is a coffee-based drink made primarily from espresso and milk. It consists of one-third espresso, one-third heated milk and one-third milk foam and is generally served in a 6 to 8-ounce cup. The cappuccino is considered one of the original espresso drinks representative of Italian espresso cuisine and eventually Italian-American espresso cuisine. According to legend, the word cappuccino comes from the Capuchin monastic order. In 1683, soldiers fighting for Marco d'Aviano, a monk from the order, found a hoard of coffee following a victory over the Ottomans in the Battle of Vienna. The coffee was too strong for the European's tastes, so they diluted it with cream and honey. The resulting brown beverage matched the robes of the monk, and was dubbed cappuccino after the order[1]. However, it should be noted that this event predates espresso, one the key ingredient of a cappuccino by nearly 300 years.It is more likely that this event did lead to the popularization of coffee in the West and its rapid spread throughout Europe.", 'id': 8, 'name': 'Cappuccino'}, {'description': 'Espresso is the name of a highly concentrated, bittersweet coffee originating in Italy in the early 20th century. Translated from Italian, the word espresso refers to the speed and single-serve nature of the coffee compared with slower and more communal methods of brewing coffee[1]. Each shot of espresso is made to order upon customer request, as opposed to being brewed in anticipation of demand. Typically served in a demitasse cup or used with other ingredients to create another beverage such as a cappuccino or a caffè corretto, espresso has become representative of coffee culture in many coffee-consuming regions.', 'id': 9, 'name': 'Espresso'}, {'description': 'description1', 'id': 10, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 12, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 13, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 14, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 15, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 16, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 17, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 18, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 19, 'name': 'Chocklate-2 '}, {'description': 'Trial 2 for the inter', 'id': 20, 'name': 'Chocklate-2 '}, {'description': 'Order Cofee', 'id': 21, 'name': 'Folded Cofee'}, {'description': 'test2112', 'id': 22, 'name': 'test'}, {'description': 'test2112', 'id': 23, 'name': 'test'}, {'description': 'test2112', 'id': 24, 'name': 'test'}, {'description': 'test2112', 'id': 25, 'name': 'test'}, {'description': 'test2112', 'id': 26, 'name': 'test'}, {'description': 'test2112', 'id': 27, 'name': 'test'}, {'description': 'Very cold , let it go', 'id': 28, 'name': 'Freezing Coffee'}, {'description': 'string', 'id': 29, 'name': 'string'}, {'description': None, 'id': 30, 'name': None}, {'description': 'ravi varama', 'id': 31, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 32, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 33, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 34, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 35, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 36, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 37, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 38, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 39, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 40, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 41, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 42, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 43, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 44, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 45, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 46, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 47, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 48, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 49, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 50, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 51, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 52, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 53, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 55, 'name': 'herbal tea'}, {'description': 'ravi varama', 'id': 56, 'name': 'herbal tea'}, {'description': None, 'id': 57, 'name': None}, {'description': 'ravi varama', 'id': 58, 'name': 'herbal tea'}, {'description': None, 'id': 59, 'name': None}, {'description': 'Vijay like tea', 'id': 60, 'name': 'Tea'}, {'description': 'viajy like coffe', 'id': 61, 'name': 'cappuccino'}, {'description': 'Test5', 'id': 62, 'name': 'Test5'}, {'description': 'Bind Coffee', 'id': 63, 'name': 'Bended coffee'}, {'description': 'Bind Coffeesssss', 'id': 64, 'name': 'Bended coffee'}, {'description': 'viajy like coffe', 'id': 65, 'name': 'cappuccino'}]</msg>
+<arg>${response_get.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.388755" elapsed="0.001971"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response_get}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.391178" elapsed="0.000421"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>GET test case passed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.391930" elapsed="0.000629"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:49:58.873245" elapsed="1.519663"/>
+</test>
+<test id="s1-s1-t3" name="Delete Test case" line="32">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-23T12:50:00.394520" level="INFO">${headers} = {'accept': 'text/plain', 'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=text/plain</arg>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.394089" elapsed="0.000507"/>
+</kw>
+<kw name="DELETE" owner="RequestsLibrary">
+<msg time="2025-12-23T12:50:03.411194" level="INFO">DELETE Request : url=https://webservice.toscacloud.com/api/v1/Coffees?id=65 
+ path_url=/api/v1/Coffees?id=65 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'accept': 'text/plain', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-12-23T12:50:03.411331" level="INFO">DELETE Response : url=https://webservice.toscacloud.com/api/v1/Coffees?id=65 
+ status=200, reason=OK 
+ headers={'Content-Length': '0', 'Date': 'Tue, 23 Dec 2025 07:20:01 GMT', 'Server': 'Microsoft-IIS/10.0', 'Set-Cookie': 'ARRAffinity=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;Secure;Domain=webservice.toscacloud.com, ARRAffinitySameSite=f5598cc7a712b298a62dd9b63dc34ea5cea3f072b449faddaa912e0b3ca5187e;Path=/;HttpOnly;SameSite=None;Secure;Domain=webservice.toscacloud.com', 'Strict-Transport-Security': 'max-age=31536000', 'api-supported-versions': '1.0', 'Content-Security-Policy': "default-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'", 'X-Frame-Options': 'DENY', 'X-Content-Type-Options': 'nosniff'} 
+ body=None 
+ </msg>
+<msg time="2025-12-23T12:50:03.411531" level="INFO">${delete_response} = &lt;Response [200]&gt;</msg>
+<var>${delete_response}</var>
+<arg>${baseurl}/api/v1/Coffees</arg>
+<arg>params=id=${id}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a DELETE request.</doc>
+<status status="PASS" start="2025-12-23T12:50:00.394844" elapsed="3.016730"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${delete_response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.411775" elapsed="0.000350"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Delete test case passed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:50:03.412388" elapsed="0.000284"/>
+</kw>
+<status status="PASS" start="2025-12-23T12:50:00.393423" elapsed="3.019462"/>
+</test>
+<status status="PASS" start="2025-12-23T12:49:56.308694" elapsed="7.105033"/>
+</suite>
+<status status="PASS" start="2025-12-23T12:49:56.220991" elapsed="7.194415"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="3" fail="0" skip="0">Testcases</stat>
+<stat name="Testdemo7" id="s1-s1" pass="3" fail="0" skip="0">Testcases.Testdemo7</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:55.749438" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:56.075684" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+<msg time="2025-12-23T12:49:58.006870" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+</errors>
+</robot>

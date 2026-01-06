@@ -1,0 +1,16 @@
+--suite Testcases.TestDemo1
+--variable CALLER_ID:5c557f36029440b486b3c78876154078
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:5
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:5
+--variable PABOTLASTLEVEL:Testcases.TestDemo1
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\5
+--consolecolors off
+--consolemarkers off
+.

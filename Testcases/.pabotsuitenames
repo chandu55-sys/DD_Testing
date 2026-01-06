@@ -1,0 +1,13 @@
+datasources:f89d4540990f5971d297611033accdf4c9afc3ff
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:8028c35e63b606e178824a11188e2a4220ef8e81
+--suite Testcases.Forloop
+--suite Testcases.HRM
+--suite Testcases.Linkdin
+--suite Testcases.Login
+--suite Testcases.Test6
+--suite Testcases.TestDemo1
+--suite Testcases.TestDemo4
+--suite Testcases.TestDemo5excel
+--suite Testcases.Testdemo7

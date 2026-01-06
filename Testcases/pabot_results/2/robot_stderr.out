@@ -1,0 +1,49 @@
+[ ERROR ] Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.
+[ ERROR ] Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages
+[ ERROR ] Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Linkdin.robot' on line 5: Importing library 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries\csv_utilities.py' failed: ModuleNotFoundError: No module named 'six.moves'
+Traceback (most recent call last):
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries\csv_utilities.py", line 1, in <module>
+    import pandas as pd
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\__init__.py", line 61, in <module>
+    from pandas.core.api import (
+    ...<62 lines>...
+    )
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\core\api.py", line 1, in <module>
+    from pandas._libs import (
+    ...<4 lines>...
+    )
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\_libs\__init__.py", line 18, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+  File "pandas/_libs/hashtable.pyx", line 1, in init pandas._libs.hashtable
+  File "pandas/_libs/missing.pyx", line 1, in init pandas._libs.missing
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\pandas\_libs\tslibs\__init__.py", line 40, in <module>
+    from pandas._libs.tslibs.conversion import localize_pydatetime
+  File "pandas/_libs/tslibs/conversion.pyx", line 1, in init pandas._libs.tslibs.conversion
+  File "pandas/_libs/tslibs/offsets.pyx", line 1, in init pandas._libs.tslibs.offsets
+  File "pandas/_libs/tslibs/timestamps.pyx", line 1, in init pandas._libs.tslibs.timestamps
+  File "pandas/_libs/tslibs/timedeltas.pyx", line 1, in init pandas._libs.tslibs.timedeltas
+  File "pandas/_libs/tslibs/timezones.pyx", line 24, in init pandas._libs.tslibs.timezones
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\dateutil\tz\__init__.py", line 2, in <module>
+    from .tz import *
+  File "C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages\dateutil\tz\tz.py", line 21, in <module>
+    from six.moves import _thread
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Libraries
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages

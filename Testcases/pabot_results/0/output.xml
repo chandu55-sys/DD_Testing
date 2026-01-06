@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-23T12:49:52.236895" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases">
+<suite id="s1-s1" name="Forloop" source="C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\Forloop.robot">
+<test id="s1-s1-t1" name="Loop Through List" line="8">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.033801" elapsed="0.000517"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.034655" elapsed="0.000568"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-12-23T12:49:53.032314" elapsed="0.003041"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.035806" elapsed="0.000357"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.036376" elapsed="0.000427"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-12-23T12:49:53.035619" elapsed="0.001291"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.037328" elapsed="0.000322"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.037859" elapsed="0.000426"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-12-23T12:49:53.037155" elapsed="0.001227"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.038749" elapsed="0.000328"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-12-23T12:49:53.039682" level="INFO">Exiting for loop altogether.</msg>
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.039275" elapsed="0.000563"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-12-23T12:49:53.038589" elapsed="0.001362"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>2</value>
+<value>3</value>
+<value>4</value>
+<value>5</value>
+<value>6</value>
+<value>8</value>
+<status status="PASS" start="2025-12-23T12:49:53.031481" elapsed="0.008593"/>
+</for>
+<status status="PASS" start="2025-12-23T12:49:53.030851" elapsed="0.009549"/>
+</test>
+<test id="s1-s1-t2" name="Loop Through Fruits Variable" line="15">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.042410" elapsed="0.000519"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.043227" elapsed="0.000473"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-12-23T12:49:53.042194" elapsed="0.001620"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.044282" elapsed="0.000401"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.044932" elapsed="0.000488"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-12-23T12:49:53.044050" elapsed="0.001485"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.045969" elapsed="0.000385"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.046601" elapsed="0.000468"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-12-23T12:49:53.045774" elapsed="0.001422"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.047625" elapsed="0.000396"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-12-23T12:49:53.048694" level="INFO">Exiting for loop altogether.</msg>
+<arg>${i} == 4</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-23T12:49:53.048259" elapsed="0.000593"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-12-23T12:49:53.047419" elapsed="0.001555"/>
+</iter>
+<var>${i}</var>
+<value>@{FRUITS}</value>
+<status status="PASS" start="2025-12-23T12:49:53.041770" elapsed="0.007325"/>
+</for>
+<status status="PASS" start="2025-12-23T12:49:53.040893" elapsed="0.008504"/>
+</test>
+<status status="PASS" start="2025-12-23T12:49:52.339131" elapsed="0.710907"/>
+</suite>
+<status status="PASS" start="2025-12-23T12:49:52.277312" elapsed="0.773854"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="2" fail="0" skip="0">Testcases</stat>
+<stat name="Forloop" id="s1-s1" pass="2" fail="0" skip="0">Testcases.Forloop</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-23T12:49:52.205159" level="ERROR">Error in file 'C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\Testcases\TestDemo5excel.robot' on line 3: Non-existing setting 'DataDriver'.</msg>
+<msg time="2025-12-23T12:49:52.273712" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\robot.exe
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Scripts\python314.zip
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\AIFA USER 77\AppData\Local\Programs\Python\Python314
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv
+  C:\Users\AIFA USER 77\PycharmProjects\DDTTESTING\.venv\Lib\site-packages</msg>
+</errors>
+</robot>
